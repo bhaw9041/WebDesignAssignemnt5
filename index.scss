@@ -1,0 +1,123 @@
+@use "./rootStyles.scss";
+@import "./common.scss";
+
+table {
+  width: 100%;
+  font-weight: 500;
+  text-align: center;
+  font-family: $font;
+  tr {
+    td {
+      details {
+        text-align: left;
+      }
+    }
+  }
+}
+
+body {
+  margin: 40px;
+  .wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 0.25fr 0.75fr;
+    grid-template-areas:
+      "....... header"
+      "sidebar content";
+    background-color: #fff;
+    color: #444;
+
+    section {
+      margin-top: $marginTop;
+      &#contactme {
+        background: pink;
+        padding: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 15px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+        .form-section-heading {
+          line-height: 40px;
+          font-size: 28px;
+          font-weight: 900;
+          color: #fb00f7;
+          text-align: center;
+          text-transform: uppercase;
+        }
+        form {
+          font-weight: 500;
+          input {
+            height: 40px;
+          }
+          label {
+            margin: 10px 0;
+          }
+          input,
+          textarea {
+            width: 100%;
+            padding: 0 15px;
+          }
+        }
+      }
+
+      .galleryWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        figure {
+          width: 33%;
+          height: 150px;
+          padding: 20px 40px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+          &:hover {
+            img {
+              box-shadow: $imgHover;
+            }
+          }
+        }
+      }
+    }
+
+    .box {
+      border-radius: 5px;
+      padding: 20px;
+      font-size: 150%;
+      &.sidebar {
+        grid-area: sidebar;
+        nav {
+          height: 20%;
+          color: navy;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          text-transform: uppercase;
+          font-family: $font;
+          float: left;
+          background: #e5e5e5;
+          padding: 10px;
+          position: sticky;
+          top: 10px;
+        }
+      }
+    }
+
+    .header {
+      border-radius: 5px;
+      grid-area: header;
+      header {
+        margin-bottom: 30px;
+        .headerimg {
+          width: 100%;
+          height: 500px;
+        }
+      }
+    }
+
+    .content {
+      grid-area: content;
+      margin-bottom: 100px;
+    }
+  }
+}

@@ -1,43 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfumery</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" href="styl.css">
-</head>
-<body>
-    <section>
-        <header>
-            <!-- <img src="/images/header.png" alt="header image" class="headerimg"> -->
-            Perfumery</header>
-    </section>    
-    <section>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="#Men">Men</a>
-            <a href="#Women">Women</a>
-            <a href="#About">About Us</a>
-        </nav>
-    <div class="row">
-        <div class="column">
-            <img src="/images/Perfume3.png" alt="men's perfume">
-            <img src="/images/Perfume5.png" alt="men's perfume">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+        <div class="header">
+            <header>
+                <img src="/images/heading_image.jpg" id="headerimage" alt="heading image" class="headerimg"/>
+              </header>
         </div>
-        <div class="column">
-            <img src="/images/Perfume6.png" alt="men's perfume">
-            <img src="/images/Perfume10.jpeg" alt="men's perfume">
+        <div class="box sidebar"><nav>
+            <menu>
+              <li><a href="#edu">Education</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="perfumery.html">My Perfume Site</a></li>
+              <li><a href="#contactme">Contact me</a></li>
+            </menu>
+          </nav></div>
+        <div class="box content">
+                <h1>Bhawna Singh</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare, nisi in pharetra accumsan, erat lacus blandit ante, sed facilisis nisl lorem a mi. Nulla commodo tortor quis libero ultrices convallis. Duis libero turpis, viverra non porta in, rhoncus in urna. In gravida tortor in magna sollicitudin, vel feugiat magna euismod. Morbi vel blandit ante, non aliquet orci. Donec interdum orci nec nisi facilisis tempus. Vivamus sed aliquam quam. Nulla magna ante, vestibulum sit amet ullamcorper in, sodales ut metus. Vestibulum justo lacus, finibus sit amet fringilla a, imperdiet in urna. Nam placerat justo quis felis convallis, facilisis hendrerit turpis ullamcorper. Curabitur eget erat pretium, consectetur sapien et, pellentesque sem. Aliquam eget sagittis ex, ut porttitor ipsum.
+        
+                  Nulla facilisi. Ut metus dolor, volutpat ut elit in, mollis aliquet sapien. Phasellus sed ex at enim semper hendrerit id nec lacus. Fusce ornare, velit a feugiat hendrerit, dolor ante mollis dolor, nec venenatis arcu ex quis massa. Maecenas sit amet arcu ornare, fermentum tellus a, suscipit lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur diam dui, accumsan eget arcu eu, finibus pellentesque est. Integer et faucibus lacus, quis consectetur nulla. Sed ac tempus tortor. Praesent tempus venenatis condimentum. Ut placerat nec quam quis facilisis.
+        
+                  Pellentesque vehicula augue sed arcu tempus scelerisque. Nulla sollicitudin sollicitudin vehicula. Fusce vel erat purus. Morbi elementum pretium dictum. Etiam dignissim sodales libero. Curabitur tempus egestas tortor at dignissim. Donec sed mi finibus, egestas lorem nec, lacinia dui. Fusce hendrerit eros odio, a bibendum orci fermentum nec. Aliquam est ipsum, placerat eu arcu quis, mollis imperdiet turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eu neque purus. Vivamus aliquam porta scelerisque. Phasellus ut metus eget mi efficitur faucibus sit amet iaculis arcu. Morbi viverra nibh eu urna posuere tincidunt. Pellentesque egestas et justo sit amet placerat. Donec turpis diam, egestas blandit molestie id, posuere eget sem.
+                </p>
+                <section id="edu">
+                  <header>
+                    <h2>Education</h2>
+                  </header>
+                  <table>
+                    <tr>
+                      <th>S.No.</th>
+                      <th>Education level</th>
+                      <th>Name of Institution</th>
+                      <th>GPA</th>
+                      <th>Year</th>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <details>
+                          <summary>Bachelors degree</summary>
+                          <p>Electronics and Communication Engineering</p>
+                        </details>
+                      </td>
+                      <td>Delhi University</td>
+                      <td>3.0</td>
+                      <td><time datetime="2019">2019 </time></td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>
+                        <details>
+                          <summary>Masters degree</summary>
+                          <p>Information Systems</p>
+                        </details>
+                      </td>
+                      <td>Northeastern University</td>
+                      <td>3.6</td>
+                      <td><time datetime="2023">2023 </time></td>
+                    </tr>
+                  </table>
+                </section>
+                <section id="gallery">
+                  <header>
+                    <h2>Gallery</h2>
+                  </header>
+                    <div class="galleryWrapper">
+                      <figure>
+                        <img src="/images/cert-1.jpg" />
+                        <figcaption>Medal 1</figcaption>
+                      </figure>
+                      <figure>
+                        <img src="/images/cert-2.jpg" />
+                        <figcaption>Medal 2</figcaption>
+                      </figure>
+                      <figure>
+                        <img src="/images/cert-3.jpg" />
+                        <figcaption>Medal 3</figcaption>
+                      </figure>
+                      <figure>
+                        <img src="/images/cert-6.jpg" />
+                        <figcaption>Certificate 1</figcaption>
+                      </figure>
+                      <figure>
+                        <img src="/images/cert-7.jpg" />
+                        <figcaption>Certificate 2</figcaption>
+                      </figure>
+                      <figure>
+                        <img src="/images/cert-8.jpg" />
+                        <figcaption>Certificate 3</figcaption>
+                      </figure>
+                      <figure>
+                        <img src="/images/cert-9.jpg" />
+                        <figcaption>Certificate 4</figcaption>
+                      </figure>
+                    </div>
+                </section>
+                <section id="contactme">
+                  <header>
+                    <h2 class="form-section-heading">Need Help?</h2>
+                  </header>
+                  <div>
+                      <form action="/action_page.php">
+                        <label for="fname">First Name</label><br />
+                        <input
+                          type="text"
+                          id="fname"
+                          name="firstname"
+                          placeholder="Enter your first name"
+                        /><br />
+                        <label for="lname">Last Name</label><br />
+                        <input
+                          type="text"
+                          id="lname"
+                          name="lastname"
+                          placeholder="Enter your last name"
+                        /><br />
+                        <label for="subject">Subject</label><br />
+                        <textarea
+                          id="subject"
+                          name="subject"
+                          placeholder="Write something.."
+                          style="height: 200px"
+                        ></textarea
+                        ><br />
+                        <button id="submit">Submit</button>
+                      </form>
+                  </div>
+                </section>
         </div>
-        <div class="column">
-            <img src="/images/Perfume3.png" alt="men's perfume">
-            <img src="/images/Perfume5.png" alt="men's perfume">
-        </div>
-        <div class="column">
-            <img src="/images/Perfume6.png" alt="men's perfume">
-            <img src="/images/Perfume10.jpeg" alt="men's perfume">
-        </div>
-    </div>
-    
-</body>
+      </div>
+  </body>
 </html>
