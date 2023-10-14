@@ -9,13 +9,15 @@ $success: green;
 $marginTop: 20px;
 
 
-@mixin heading-styles($textAlign: center, $fontWeight: 700) {
+@mixin heading-styles($textAlign: center, $fontWeight: 700) { 
+
   font-family: $font;
   text-align: $textAlign;
   font-weight: $fontWeight;
 }
 
 @mixin h1-style {
+  
   @include heading-styles(center, 900);
 }
 
