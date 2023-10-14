@@ -1,28 +1,37 @@
 $font: fantasy, "Times New Roman", Times, serif;
 $fontSizeRegular: 16px;
-$imgHover: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+$imgHover: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+  rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+  rgba(0, 0, 0, 0.09) 0px -3px 5px;
 $primary: blue;
-$danger:  red;
+$danger: red;
 $success: green;
 $marginTop: 20px;
 
 
 @mixin heading-styles($textAlign: center, $fontWeight: 700) {
-    font-family: $font;
-    text-align: $textAlign;
-    font-weight: $fontWeight;
-  }
-  
-  @mixin h1-style {
-    @include heading-styles(center, 900);
-  }
-  
-  @mixin h2-style {
-    @include heading-styles(center, 700);
-  }
-  
-  @mixin paragraph-style {
-    @include heading-styles(left, 500);
-  }
+  font-family: $font;
+  text-align: $textAlign;
+  font-weight: $fontWeight;
+}
+
+@mixin h1-style {
+  @include heading-styles(center, 900);
+}
+
+@mixin h2-style {
+  @include heading-styles(center, 700);
+}
+
+@mixin paragraph-style {
+  @include heading-styles(left, 500);
+}
+%perfume:hover {
+  border-color: rgb(224, 160, 103);
+}
+
+
+@function invert($color, $amount: 100%) {
+  $inverse: change-color($color, $hue: hue($color) + 180);
+  @return mix($inverse, $color, $amount);
+}

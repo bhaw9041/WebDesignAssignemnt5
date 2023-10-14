@@ -82,6 +82,10 @@ body .wrapper section#contactme form textarea {
   width: 100%;
   padding: 0 15px;
 }
+body .wrapper section#contactme form .submitBtn {
+  background-color: blue;
+  color: gray;
+}
 body .wrapper section .galleryWrapper {
   display: flex;
   flex-wrap: wrap;

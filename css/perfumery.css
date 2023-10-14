@@ -1,3 +1,7 @@
+.wrapper .container .grid-item:hover {
+  border-color: rgb(224, 160, 103);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,6 +30,10 @@ p {
 a {
   text-decoration: none;
   color: navy;
+}
+
+.wrapper .container .grid-item:hover {
+  border-color: rgb(224, 160, 103);
 }
 
 header {
