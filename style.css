@@ -1,0 +1,13 @@
+header{
+    color: rgb(41, 7, 60);
+    font-size: xx-large;
+    font-family: fantasy;
+}
+.headerimg{
+    width: 90%;
+
+}
+.container img{
+    width: 500px;
+    height: 500px;
+}
