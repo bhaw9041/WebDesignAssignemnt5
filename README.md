@@ -1,4 +1,4 @@
-# WebDesignAssignemnt5
+# perfume website
 
 2 page website to for perfumes
 1. Home/About me page has a grid layout. 3 children nodes-1 for header, 1 box sidebar and 1 box content. Box content also contains education table and contact me form. 
